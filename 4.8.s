@@ -17,6 +17,24 @@ loop:
 	b loop
 end:
 
+#Second solution (more efficient)
+	move $t0, $zero
+	la $t3, N
+	lw $t3, 0($t3)
+	li $t4,3
+	mult $t3, $t4
+	mflo $t4
+	addiu $t4, $t4, $a0
+loop:
+	bge $t0, $t3, end
+	lw $t5, 0($t4)
+	addu $t2,$t2, $t5
+	addiu $t4, $t4, 4
+	addiu $t0, $t0, 1
+	b loop
+end: 
+
+
 #SECTION B
 #First solution 
 	move $t0, $zero
