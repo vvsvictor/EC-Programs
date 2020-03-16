@@ -24,12 +24,13 @@ end:
 	li $t4,3
 	mult $t3, $t4
 	mflo $t4
+	sll $t4, $t4, 2
 	addiu $t4, $t4, $a0
 loop:
 	bge $t0, $t3, end
 	lw $t5, 0($t4)
 	addu $t2,$t2, $t5
-	addiu $t4, $t4, 4
+	addiu $t4, $t4, 4 #STRIDE
 	addiu $t0, $t0, 1
 	b loop
 end: 
