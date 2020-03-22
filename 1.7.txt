@@ -1,0 +1,20 @@
+1)
+IC = 10
+ICi: Number of instructions
+CCi clock cycles
+CPI = sum(ICi * CCi) / IC
+
+a)
+P1:
+CPI = (10 + 2*20 + 3*50 + 4*20 )  / 100 = 2.8
+P2:
+CPI = (2*10 + 2*20 + 2*50 + 2*20) / 100 = 2
+
+b)
+P1 tc = 6*10 ^ -10 s
+Texe P1: I * CPI * tc = 100 * 2.8 * 6*10 ^-10 = 1.68 * 10 ^-7 s (168ns)
+P2 tc =  5*10 ^ -10 s
+Texe P2: I * CPi * tc = 100 * 2* 5*(10 ^-10) = 1*10^-7 (100ns )
+
+Sol:
+P2< P1
