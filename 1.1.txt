@@ -1,0 +1,5 @@
+C --> Llenguatge maquina x86 (en x86)
+BIN x86 --> Llenguatge maquina MIPS (MIPS)
+Java( en c)
+
+Java --> C --> x86 --> MIPS -->PC MIPS
