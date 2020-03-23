@@ -1,0 +1,24 @@
+1)
+250nm: 
+Pest = (1/50)* 100 = 2% --> Pdin = 100%-2% = 98%
+
+90nm:
+Pest = (45/120)*100 = 37.5% --> Pdin = 100% - 37.5% = 62.5% 
+
+2)
+Pest  = V * Ileak
+250nm:
+1 = 3.3 * Ileak --> Ileak = 3.3 ^-1 = 0.303A
+
+90nm:
+45 = 1.1 * Ileak --> Ileak = 40,909A
+
+3)
+a)
+P orig / P millorada 
+50/1 = 50 vegades
+
+b)
+120/45 = 2.667 vegades
+
+

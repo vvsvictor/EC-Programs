@@ -1,7 +1,6 @@
 func:
     ble $a1, $a2, end
-    la $t0, N
-    lw $t0, 0($t0)
+    li $t0, N
     mult $a1, $t0 #i*N
     mflo $t1
     addu $t1, $t1, $a2 # i*N + j
@@ -15,3 +14,4 @@ func:
     lw $t2, 0($t2) # mat[j][i]
     sw $t2, 0($t1) # mat[i][j] = mat [j][i]
 end:
+  jr $ra
