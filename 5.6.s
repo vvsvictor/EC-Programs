@@ -10,3 +10,7 @@ srl $t4, $t4, 31 # bit 31 a la posició 1
 #nandc
 and $t3, $t4, $t3
 not $t3, $t3
+
+#Better:
+addu $t0, $t1, $t2
+sltu $t3, $t0, $t2 #suma < b
